@@ -169,6 +169,8 @@ button {
 }
 
 .hero-section-button {
+    display: block;
+    min-width: 169px;
     background-color: var(--c-brand);
     color: var(--c-primary-light);
     font-size: 16px;
