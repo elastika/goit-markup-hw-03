@@ -302,7 +302,7 @@ button:focus {
 
 .portfolio-section-list-item {
     background-color: var(--c-background-white);
-    flex-basis: calc((100%-48px)/3);
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-section-list-item-description {
