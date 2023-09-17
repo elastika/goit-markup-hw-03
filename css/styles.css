@@ -7,6 +7,7 @@
     --c-background-dark: #2E2F42;
     --c-background-light: #F4F4FD;
     --c-background-white: #FFF;
+    --c-cornflower: #E7E9FC;
 }
 
 /*Base*/
@@ -67,7 +68,7 @@ img {
 /*Header*/
 
 .header {
-    border-bottom: 1px solid var(--c-background-light);
+    border-bottom: 1px solid var(--c-cornflower);
 }
 
 .header-inner {
@@ -83,7 +84,15 @@ img {
     gap: 40px;
 }
 
-.nav-link {
+.header-nav-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+    padding: 24 0;
+}
+
+.nav-menu-item {
     display: inline-block;
     padding: 24px 0;
     color: var(--c-primary-dark);
@@ -95,18 +104,10 @@ img {
     align-items: center;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-menu-item:hover,
+.nav-menu-item:focus {
     color: var(--c-brand-pressed);
     text-decoration: underline;
-}
-
-.header-nav-menu {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    gap: 40px;
-    padding: 24 0;
 }
 
 .contacts {
@@ -118,11 +119,6 @@ img {
     letter-spacing: 0.02em;
 }
 
-.contacts-list:hover,
-.contacts-list:focus {
-    color: var(--c-brand-pressed);
-}
-
 .contacts-menu {
     display: flex;
     align-items: center;
@@ -130,6 +126,11 @@ img {
     flex-grow: 1;
     padding: 24 0;
 
+}
+
+.contacts-menu-item:hover,
+.contacts-menu-item:focus {
+    color: var(--c-brand-pressed);
 }
 
 .logo {
@@ -140,6 +141,7 @@ img {
     line-height: 1.17em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo .logo-accent {
