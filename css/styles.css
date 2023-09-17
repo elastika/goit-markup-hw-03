@@ -68,10 +68,10 @@ img {
 /*Header*/
 
 .header {
-    border-bottom: 1px solid var(--c-cornflower);
+    border-bottom: 1px solid #e7e9fc;
 }
 
-.header-inner {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +125,6 @@ img {
     gap: 40px;
     flex-grow: 1;
     padding: 24 0;
-
 }
 
 .contacts-menu-item:hover,
@@ -134,6 +133,7 @@ img {
 }
 
 .logo {
+    display: block;
     color: var(--c-brand);
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -320,10 +320,6 @@ button:focus {
 .footer {
     background-color: var(--c-background-dark);
     padding: 101.5px 0 100px;
-}
-
-.logo {
-    margin-bottom: 17.5px;
 }
 
 .logo-footer {
