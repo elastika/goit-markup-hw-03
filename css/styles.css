@@ -201,7 +201,6 @@ button:focus {
 .features-section-list {
     display: flex;
     gap: 24px;
-    
 }
 
 .features-section-list-item {
@@ -228,20 +227,24 @@ button:focus {
 
 .team-section {
     background-color: var(--c-background-light);
+    padding: 120px 0;
 }
 
 .team-section-list {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100%-72px)/4);
 }
 
 .team-section-list-item {
     background-color: var(--c-background-white);
+    flex-basis: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
 .team-member {
-    padding-bottom: 32px;
+    padding: 32px 0;
+    
 }
 
 .team-section-title {
@@ -255,14 +258,13 @@ button:focus {
     margin-bottom: 72px;
 }
 
-.team-section-list-title {
+.team-section-list-subtitle {
     color: var(--c-primary-dark);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2em;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -279,17 +281,7 @@ button:focus {
 
 .portfolio-section {
     background-color: var(--c-background-white);
-}
-
-.portfolio-section-list {
-    display: flex;
-    gap: 24px;
-    flex-basis: calc((100%-48px)/3);
-    flex-wrap: wrap;
-}
-
-.portfolio-section-list-items {
-    background-color: var(--c-background-white);
+    padding: 120px 0;
 }
 
 .portfolio-section-title {
@@ -303,13 +295,30 @@ button:focus {
     margin-bottom: 72px;
 }
 
-.portfolio-section-list-title {
+.portfolio-section-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.portfolio-section-list-item {
+    background-color: var(--c-background-white);
+    flex-basis: calc((100%-48px)/3);
+}
+
+.portfolio-section-list-item-description {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio-section-list-subtitle {
     color: var(--c-primary-dark);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -324,11 +333,11 @@ button:focus {
 
 .footer {
     background-color: var(--c-background-dark);
-    padding: 101.5px 0 100px;
+    padding: 100px 0;
 }
 
 .logo-footer {
-
+    display: inline-block;
     color: var(--c-brand);
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -336,6 +345,7 @@ button:focus {
     line-height: 1.17em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .logo-footer .logo-footer-accent {
