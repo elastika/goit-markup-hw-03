@@ -195,15 +195,20 @@ button:focus {
 
 .features-section {
     background-color: var(--c-background-white);
+    padding: 120px 0;
 }
 
 .features-section-list {
     display: flex;
     gap: 24px;
+    
+}
+
+.features-section-list-item {
     flex-basis: calc((100%-72px)/4);
 }
 
-.features-section-title {
+.features-section-subtitle {
     color: var(--c-primary-dark);
     font-size: 20px;
     font-weight: 500;
