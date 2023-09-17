@@ -230,23 +230,6 @@ button:focus {
     padding: 120px 0;
 }
 
-.team-section-list {
-    display: flex;
-    gap: 24px;
-}
-
-.team-section-list-item {
-    background-color: var(--c-background-white);
-    flex-basis: calc((100%-72px)/4);
-    border-radius: 0px 0px 4px 4px;
-    text-align: center;
-}
-
-.team-member {
-    padding: 32px 0;
-    
-}
-
 .team-section-title {
     color: var(--c-primary-dark);
     font-size: 36px;
@@ -256,6 +239,22 @@ button:focus {
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 72px;
+}
+
+.team-section-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-section-list-item {
+    background-color: var(--c-background-white);
+    flex-basis: calc((100%-72px)/4);
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+}
+
+.team-member {
+    padding: 32px 0;
 }
 
 .team-section-list-subtitle {
@@ -269,7 +268,6 @@ button:focus {
 }
 
 .team-section-list-text {
-
     color: var(--c-primary-text);
     font-size: 16px;
     line-height: 1.5em;
